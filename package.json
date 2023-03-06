@@ -25,6 +25,7 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.10",
     "debug": "^4.3.4",
+    "jsonic": "^1.0.1",
     "memoizee": "^0.4.11",
     "ofetch": "^1.0.1",
     "ramda": "^0.21.0"

@@ -111,7 +111,10 @@ describe('App method', () => {
   it('should get the developer physical address', () => {
     return gplay.app({ appId: 'com.snapchat.android' })
       .then((app) => {
-        assert.equal(app.developerAddress, '63 Market St.\nVenice CA, 90291');
+        assert.equal(app.developerAddress,
+          '2772 Donald Douglas Loop, North\n' +
+        'Santa Monica, CA 90405\n' +
+        'USA');
       });
   });
 
@@ -185,5 +188,5 @@ describe('App method', () => {
       .then((app) => {
         assert.equal(app.available, false);
       });
-  });
+    });
 });

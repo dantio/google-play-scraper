@@ -1,5 +1,6 @@
-const requestLib = require('got');
+const { ofetch } = require('ofetch');
 const throttled = require('../lib/utils/throttle');
+const requestLib = ofetch;
 
 it('Should make three requests with 5000ms interval. (Throttle function)', function (done) {
   this.timeout(15000);
